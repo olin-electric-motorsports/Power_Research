@@ -24,15 +24,4 @@ F 3 "~" H 4650 3300 50  0001 C CNN
 	1    4650 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F1A4EA5
-P 5700 3350
-F 0 "R?" H 5770 3396 50  0000 L CNN
-F 1 "R" H 5770 3305 50  0000 L CNN
-F 2 "" V 5630 3350 50  0001 C CNN
-F 3 "~" H 5700 3350 50  0001 C CNN
-	1    5700 3350
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
