@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -14,15 +14,27 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4900 2300 1300 1950
-U 5F1A4A33
-F0 "test" 50
-F1 "test.sch" 50
+S 3550 2650 1250 2050
+U 5F2CB7B2
+F0 "PS1" 50
+F1 "PS1.sch" 50
 $EndSheet
 $Sheet
-S 6800 2250 1250 2050
-U 5F1A4A8F
-F0 "test2" 50
-F1 "test2.sch" 50
+S 5150 2650 1250 2050
+U 5F2CB8F1
+F0 "PS2" 50
+F1 "PS2.sch" 50
 $EndSheet
+$Sheet
+S 6750 2650 1250 2050
+U 5F2CB984
+F0 "PS3" 50
+F1 "PS3.sch" 50
+$EndSheet
+Text Notes 4100 2400 0    50   ~ 0
+adi\n
+Text Notes 5750 2350 0    50   ~ 0
+izzi
+Text Notes 7350 2350 0    50   ~ 0
+sree
 $EndSCHEMATC
