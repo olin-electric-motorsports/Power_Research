@@ -16,17 +16,6 @@ $EndDescr
 Wire Wire Line
 	3150 1400 3150 1200
 $Comp
-L power:GND #PWR?
-U 1 1 5F36A312
-P 2250 2500
-F 0 "#PWR?" H 2250 2250 50  0001 C CNN
-F 1 "GND" H 2255 2327 50  0000 C CNN
-F 2 "" H 2250 2500 50  0001 C CNN
-F 3 "" H 2250 2500 50  0001 C CNN
-	1    2250 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L formula:C_1uF C_VCC
 U 1 1 5F360A12
 P 2250 2400
@@ -40,9 +29,6 @@ F 4 "https://www.digikey.com/product-detail/en/yageo/CC0805ZKY5V9BB105/311-1909-
 $EndComp
 Wire Wire Line
 	2100 1950 2100 1700
-Connection ~ 2100 1700
-Wire Wire Line
-	2100 1700 1650 1700
 Wire Wire Line
 	3750 1800 3850 1800
 Wire Wire Line
@@ -51,17 +37,6 @@ Wire Wire Line
 	2250 2200 2500 2200
 Wire Wire Line
 	2500 1700 2100 1700
-$Comp
-L power:GND #PWR?
-U 1 1 5F35E286
-P 5000 2500
-F 0 "#PWR?" H 5000 2250 50  0001 C CNN
-F 1 "GND" H 5005 2327 50  0000 C CNN
-F 2 "" H 5000 2500 50  0001 C CNN
-F 3 "" H 5000 2500 50  0001 C CNN
-	1    5000 2500
-	1    0    0    -1  
-$EndComp
 $Comp
 L formula:C_10uF C_OUT2
 U 1 1 5F3536D1
@@ -113,17 +88,6 @@ F 5 "1276-1052-1-ND" H 1800 2900 60  0001 C CNN "MPN"
 F 6 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21A106KPFNNNE/1276-1052-1-ND/3889138" H 2225 2650 60  0001 C CNN "PurchasingLink"
 	1    1800 2150
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F37B41E
-P 1650 2500
-F 0 "#PWR?" H 1650 2250 50  0001 C CNN
-F 1 "GND" H 1655 2327 50  0000 C CNN
-F 2 "" H 1650 2500 50  0001 C CNN
-F 3 "" H 1650 2500 50  0001 C CNN
-	1    1650 2500
-	1    0    0    -1  
 $EndComp
 $Comp
 L formula:C_10uF C_IN1
@@ -180,52 +144,6 @@ F 6 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21A10
 	1    4850 2150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1500 2350 1500 2450
-Wire Wire Line
-	1500 2450 1650 2450
-Wire Wire Line
-	1800 2450 1800 2350
-Wire Wire Line
-	1650 2500 1650 2450
-Connection ~ 1650 2450
-Wire Wire Line
-	1650 2450 1800 2450
-Wire Wire Line
-	1650 1950 1500 1950
-Wire Wire Line
-	1500 1950 1500 2050
-Wire Wire Line
-	1650 1700 1650 1950
-Wire Wire Line
-	1650 1950 1800 1950
-Wire Wire Line
-	1800 1950 1800 2050
-Connection ~ 1650 1950
-Wire Wire Line
-	4850 2050 4850 1950
-Wire Wire Line
-	5150 1950 5150 2050
-Wire Wire Line
-	4850 1950 5000 1950
-Wire Wire Line
-	5000 1950 5000 1800
-Wire Wire Line
-	4250 1800 5000 1800
-Connection ~ 5000 1950
-Wire Wire Line
-	5000 1950 5150 1950
-Wire Wire Line
-	4850 2350 4850 2450
-Wire Wire Line
-	4850 2450 5000 2450
-Wire Wire Line
-	5150 2450 5150 2350
-Wire Wire Line
-	5000 2500 5000 2450
-Connection ~ 5000 2450
-Wire Wire Line
-	5000 2450 5150 2450
 Connection ~ 3850 1800
 $Comp
 L formula:L_22uH L1
@@ -252,23 +170,11 @@ F 6 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 473
 	1    4250 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F3A271E
-P 4250 2500
-F 0 "#PWR?" H 4250 2250 50  0001 C CNN
-F 1 "GND" H 4255 2327 50  0000 C CNN
-F 2 "" H 4250 2500 50  0001 C CNN
-F 3 "" H 4250 2500 50  0001 C CNN
-	1    4250 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 2100 4250 2100
 Wire Wire Line
 	4250 2100 4250 2200
 Connection ~ 4250 2200
-Connection ~ 4250 1800
 $Comp
 L formula:R_52.3k R2
 U 1 1 5F41CC0E
@@ -278,6 +184,104 @@ F 1 "R_52.3k" H 4330 1955 50  0000 L CNN
 F 2 "" H 4500 1950 50  0001 C CNN
 F 3 "" H 4500 1950 50  0001 C CNN
 	1    4250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1800 4850 1800
+Wire Wire Line
+	4850 1800 4850 2050
+Connection ~ 4250 1800
+Wire Wire Line
+	4850 1800 5150 1800
+Wire Wire Line
+	5150 1800 5150 2050
+Connection ~ 4850 1800
+Wire Wire Line
+	2100 1700 1800 1700
+Wire Wire Line
+	1800 1700 1800 2050
+Connection ~ 2100 1700
+Wire Wire Line
+	1800 1700 1500 1700
+Wire Wire Line
+	1500 1700 1500 2050
+Connection ~ 1800 1700
+Wire Wire Line
+	1500 2350 1500 2500
+Wire Wire Line
+	1800 2350 1800 2500
+Wire Wire Line
+	4850 2350 4850 2500
+Wire Wire Line
+	5150 2350 5150 2500
+Text Label 5150 1800 0    50   ~ 0
+V_OUT
+Text Label 1500 1700 2    50   ~ 0
+V_IN
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F4BA01E
+P 1500 2500
+F 0 "#PWR?" H 1500 2250 50  0001 C CNN
+F 1 "GNDA" H 1505 2327 50  0000 C CNN
+F 2 "" H 1500 2500 50  0001 C CNN
+F 3 "" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F4C444F
+P 1800 2500
+F 0 "#PWR?" H 1800 2250 50  0001 C CNN
+F 1 "GNDA" H 1805 2327 50  0000 C CNN
+F 2 "" H 1800 2500 50  0001 C CNN
+F 3 "" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F4C4935
+P 2250 2500
+F 0 "#PWR?" H 2250 2250 50  0001 C CNN
+F 1 "GNDA" H 2255 2327 50  0000 C CNN
+F 2 "" H 2250 2500 50  0001 C CNN
+F 3 "" H 2250 2500 50  0001 C CNN
+	1    2250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F4C4EC2
+P 4250 2500
+F 0 "#PWR?" H 4250 2250 50  0001 C CNN
+F 1 "GNDA" H 4255 2327 50  0000 C CNN
+F 2 "" H 4250 2500 50  0001 C CNN
+F 3 "" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F4C6950
+P 4850 2500
+F 0 "#PWR?" H 4850 2250 50  0001 C CNN
+F 1 "GNDA" H 4855 2327 50  0000 C CNN
+F 2 "" H 4850 2500 50  0001 C CNN
+F 3 "" H 4850 2500 50  0001 C CNN
+	1    4850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F4C6F6B
+P 5150 2500
+F 0 "#PWR?" H 5150 2250 50  0001 C CNN
+F 1 "GNDA" H 5155 2327 50  0000 C CNN
+F 2 "" H 5150 2500 50  0001 C CNN
+F 3 "" H 5150 2500 50  0001 C CNN
+	1    5150 2500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
