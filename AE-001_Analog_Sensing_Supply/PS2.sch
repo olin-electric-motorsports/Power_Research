@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Formula:C_4.7uF_25V C1
+L AE-001_Analog_Sensing_Supply-rescue:C_4.7uF_25V-Formula C1
 U 1 1 5F3028AB
 P 2700 3350
 F 0 "C1" H 2815 3446 50  0000 L CNN
@@ -26,7 +26,7 @@ F 4 "https://www.digikey.com/product-detail/en/tdk-corporation/C2012X7R1H225M125
 	-1   0    0    1   
 $EndComp
 $Comp
-L Formula:C_10uF C3
+L AE-001_Analog_Sensing_Supply-rescue:C_10uF-Formula C3
 U 1 1 5F303155
 P 6100 3800
 F 0 "C3" H 6215 3896 50  0000 L CNN
@@ -40,7 +40,7 @@ F 6 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21A10
 	1    0    0    -1  
 $EndComp
 $Comp
-L Formula:C_10nF C2
+L AE-001_Analog_Sensing_Supply-rescue:C_10nF-Formula C2
 U 1 1 5F2D5B34
 P 4300 3100
 F 0 "C2" V 4048 3100 50  0000 C CNN
@@ -54,7 +54,7 @@ F 6 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B10
 	0    1    1    0   
 $EndComp
 $Comp
-L Formula:L_2.2uH L1
+L AE-001_Analog_Sensing_Supply-rescue:L_2.2uH-Formula L1
 U 1 1 5F2D542D
 P 5250 3550
 F 0 "L1" H 5298 3596 50  0000 L CNN
@@ -75,7 +75,7 @@ Connection ~ 4700 3550
 Text Label 6550 3550 0    50   ~ 0
 VOUT
 $Comp
-L Formula:R_9.53K R3
+L AE-001_Analog_Sensing_Supply-rescue:R_9.53K-Formula R3
 U 1 1 5F2F6E97
 P 5550 4100
 F 0 "R3" H 5620 4146 50  0000 L CNN
@@ -129,7 +129,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 3900 6100 4250
 $Comp
-L Formula:R_49.9K R2
+L AE-001_Analog_Sensing_Supply-rescue:R_49.9K-Formula R2
 U 1 1 5F2ED8B6
 P 5550 3750
 F 0 "R2" H 5620 3796 50  0000 L CNN
@@ -162,19 +162,7 @@ Connection ~ 2700 3200
 Wire Wire Line
 	2700 3200 3200 3200
 $Comp
-L Formula:R_6.2M R1
-U 1 1 5F404635
-P 3200 3400
-F 0 "R1" H 3270 3446 50  0000 L CNN
-F 1 "R_6.2M" H 3270 3355 50  0000 L CNN
-F 2 "footprints:R_0805_OEM" H 2100 3700 50  0001 L CNN
-F 3 "https://www.vishay.com/docs/20035/dcrcwe3.pdf" H 2100 3800 50  0001 L CNN
-F 4 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW08056M20FKEA/541-6-20MCTR-ND/1176107" H 2100 3900 60  0001 L CNN "PurchasingLink"
-	1    3200 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Formula:CDBA140-G D1
+L AE-001_Analog_Sensing_Supply-rescue:CDBA140-G-Formula D1
 U 1 1 5F405057
 P 4700 3800
 F 0 "D1" V 4654 3879 50  0000 L CNN
@@ -186,9 +174,11 @@ F 4 "https://www.digikey.in/product-detail/en/comchip-technology/CDBA140-G/641-1
 	0    1    1    0   
 $EndComp
 $Comp
-L Formula:AOZ1280 U1
+L AE-001_Analog_Sensing_Supply-rescue:AOZ1280-Formula U1
 U 1 1 5F2ED2E8
 P 3900 3500
+AR Path="/5F2ED2E8" Ref="U1"  Part="1" 
+AR Path="/5F2CB8F1/5F2ED2E8" Ref="U1"  Part="1" 
 F 0 "U1" H 3900 3750 50  0000 C CNN
 F 1 "AOZ1280" H 3600 2950 50  0000 C CNN
 F 2 "" H 4150 3850 50  0001 C CNN
@@ -216,4 +206,16 @@ Wire Wire Line
 	4050 3100 4150 3100
 Wire Wire Line
 	4450 3100 4700 3100
+$Comp
+L AE-001_Analog_Sensing_Supply-rescue:R_7.5M-Formula R1
+U 1 1 5F48DE6E
+P 3200 3400
+F 0 "R1" H 3270 3446 50  0000 L CNN
+F 1 "R_7.5M" H 3270 3355 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 2100 3700 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 3800 50  0001 L CNN
+F 4 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-077M5L/311-7-50MCRTR-ND/728117" H 2100 3900 60  0001 L CNN "PurchasingLink"
+	1    3200 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
