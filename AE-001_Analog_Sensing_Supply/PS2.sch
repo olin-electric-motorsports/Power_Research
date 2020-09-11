@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 1 1
 Title "Asynchronous Buck"
 Date ""
 Rev "1"
@@ -20,8 +20,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 3550 5150 3550
 Connection ~ 4700 3550
-Text Label 6550 3550 0    50   ~ 0
-VOUT
 Wire Wire Line
 	4700 3100 4700 3550
 Text Label 2450 3200 2    50   ~ 0
@@ -117,7 +115,7 @@ U 1 1 5F48B5B3
 P 3900 3500
 F 0 "U1" H 3550 3200 50  0000 R CNN
 F 1 "AOZ1280" H 3600 3100 50  0000 R CNN
-F 2 "" H 4150 3850 50  0001 C CNN
+F 2 "footprints:SOT-23-6_OEM" H 4150 3850 50  0001 C CNN
 F 3 "http://aosmd.com/res/data_sheets/AOZ1280CI.pdf" H 4150 3850 50  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/alpha-omega-semiconductor-inc/AOZ1280CI/785-1277-1-ND/2769845" H 3350 4150 50  0001 C CNN "Purchasing Link"
 	1    3900 3500
@@ -143,7 +141,7 @@ U 1 1 5F48C8ED
 P 4700 3800
 F 0 "D1" V 4654 3879 50  0000 L CNN
 F 1 "CDBA140-G" V 4745 3879 50  0000 L CNN
-F 2 "" H 4600 3800 50  0001 C CNN
+F 2 "footprints:DO-214AC" H 4600 3800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Comchip%20PDFs/CDBA120-G~CDBA1100-G.pdf" H 4700 3900 50  0001 C CNN
 F 4 "https://www.digikey.in/product-detail/en/comchip-technology/CDBA140-G/641-1015-1-ND/1121137" H 5000 4200 60  0001 C CNN "PurchasingLink"
 	1    4700 3800
@@ -155,7 +153,7 @@ U 1 1 5F48D4FA
 P 5250 3550
 F 0 "L1" V 5435 3550 50  0000 C CNN
 F 1 "L_2.2uH" V 5344 3550 50  0000 C CNN
-F 2 "" H 5180 3490 50  0001 C CNN
+F 2 "footprints:BRL3225" H 5180 3490 50  0001 C CNN
 F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=BRL3225T2R2M%20%20&u=M" H 5280 3590 50  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/taiyo-yuden/BRL3225T2R2M/587-2165-1-ND/2002863" H 5680 3990 60  0001 C CNN "PurchasingLink"
 	1    5250 3550
@@ -192,7 +190,7 @@ P 6100 3800
 F 0 "C3" H 6215 3896 50  0000 L CNN
 F 1 "C_10uF" H 6215 3805 50  0000 L CNN
 F 2 "footprints:C_0805_OEM" H 6138 4400 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/06/20/CL21A106KPFNNNE.pdf" H 6125 4650 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 6125 4650 50  0001 C CNN
 F 4 "DK" H 6100 3850 60  0001 C CNN "MFN"
 F 5 "1276-1052-1-ND" H 6100 4550 60  0001 C CNN "MPN"
 F 6 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21A106KPFNNNE/1276-1052-1-ND/3889138" H 6525 4300 60  0001 C CNN "PurchasingLink"
@@ -216,4 +214,6 @@ Connection ~ 5550 3900
 Connection ~ 5550 4250
 Wire Wire Line
 	5550 4250 6100 4250
+Text Label 6550 3550 0    50   ~ 0
+VOUT
 $EndSCHEMATC
