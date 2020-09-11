@@ -106,7 +106,7 @@ $EndComp
 Wire Wire Line
 	3150 1200 3850 1200
 $Comp
-L formula:MCP16312 U
+L PS3-rescue:MCP16312-formula U
 U 1 1 5F3504EF
 P 3700 3150
 F 0 "U" H 3125 5081 50  0000 C CNN
@@ -117,7 +117,7 @@ F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP16311-Family-Data-Sheet
 	1    0    0    -1  
 $EndComp
 $Comp
-L formula:C_100nF C_BOOST
+L PS3-rescue:C_100nF-formula C_BOOST
 U 1 1 5F430872
 P 3850 1350
 F 0 "C_BOOST" H 3965 1396 50  0000 L CNN
@@ -146,7 +146,7 @@ F 6 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21A10
 $EndComp
 Connection ~ 3850 1800
 $Comp
-L formula:L_22uH L1
+L PS3-rescue:L_22uH-formula L1
 U 1 1 5F475F58
 P 4050 1750
 F 0 "L1" H 4050 1898 50  0000 C CNN
@@ -157,7 +157,7 @@ F 3 "https://www.bourns.com/docs/Product-Datasheets/SRN8040.pdf" H 4050 1800 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L formula:R_10K R1
+L PS3-rescue:R_10K-formula R1
 U 1 1 5F401EB3
 P 4250 2350
 F 0 "R1" H 4320 2396 50  0000 L CNN
@@ -176,7 +176,7 @@ Wire Wire Line
 	4250 2100 4250 2200
 Connection ~ 4250 2200
 $Comp
-L formula:R_52.3k R2
+L PS3-rescue:R_52.3k-formula R2
 U 1 1 5F41CC0E
 P 4250 2000
 F 0 "R2" H 4330 2046 50  0000 L CNN
@@ -220,28 +220,6 @@ Text Label 1500 1700 2    50   ~ 0
 V_IN
 $Comp
 L power:GNDA #PWR?
-U 1 1 5F4BA01E
-P 1500 2500
-F 0 "#PWR?" H 1500 2250 50  0001 C CNN
-F 1 "GNDA" H 1505 2327 50  0000 C CNN
-F 2 "" H 1500 2500 50  0001 C CNN
-F 3 "" H 1500 2500 50  0001 C CNN
-	1    1500 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5F4C444F
-P 1800 2500
-F 0 "#PWR?" H 1800 2250 50  0001 C CNN
-F 1 "GNDA" H 1805 2327 50  0000 C CNN
-F 2 "" H 1800 2500 50  0001 C CNN
-F 3 "" H 1800 2500 50  0001 C CNN
-	1    1800 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
 U 1 1 5F4C4935
 P 2250 2500
 F 0 "#PWR?" H 2250 2250 50  0001 C CNN
@@ -263,24 +241,46 @@ F 3 "" H 4250 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR?
-U 1 1 5F4C6950
+L power:GNDPWR #PWR?
+U 1 1 5F4956B2
+P 1500 2500
+F 0 "#PWR?" H 1500 2300 50  0001 C CNN
+F 1 "GNDPWR" H 1422 2346 50  0000 C CNN
+F 2 "" H 1500 2450 50  0001 C CNN
+F 3 "" H 1500 2450 50  0001 C CNN
+	1    1500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F495BD7
 P 4850 2500
-F 0 "#PWR?" H 4850 2250 50  0001 C CNN
-F 1 "GNDA" H 4855 2327 50  0000 C CNN
-F 2 "" H 4850 2500 50  0001 C CNN
-F 3 "" H 4850 2500 50  0001 C CNN
+F 0 "#PWR?" H 4850 2300 50  0001 C CNN
+F 1 "GNDPWR" H 4772 2346 50  0000 C CNN
+F 2 "" H 4850 2450 50  0001 C CNN
+F 3 "" H 4850 2450 50  0001 C CNN
 	1    4850 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR?
-U 1 1 5F4C6F6B
+L power:GNDPWR #PWR?
+U 1 1 5F49D2AB
+P 1800 2500
+F 0 "#PWR?" H 1800 2300 50  0001 C CNN
+F 1 "GNDPWR" H 1804 2346 50  0000 C CNN
+F 2 "" H 1800 2450 50  0001 C CNN
+F 3 "" H 1800 2450 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F4A200B
 P 5150 2500
-F 0 "#PWR?" H 5150 2250 50  0001 C CNN
-F 1 "GNDA" H 5155 2327 50  0000 C CNN
-F 2 "" H 5150 2500 50  0001 C CNN
-F 3 "" H 5150 2500 50  0001 C CNN
+F 0 "#PWR?" H 5150 2300 50  0001 C CNN
+F 1 "GNDPWR" H 5154 2346 50  0000 C CNN
+F 2 "" H 5150 2450 50  0001 C CNN
+F 3 "" H 5150 2450 50  0001 C CNN
 	1    5150 2500
 	1    0    0    -1  
 $EndComp
