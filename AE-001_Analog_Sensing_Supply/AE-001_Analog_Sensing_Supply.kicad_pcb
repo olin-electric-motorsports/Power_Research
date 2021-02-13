@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 7)
     (tracks 0)
     (zones 0)
     (modules 0)
@@ -101,6 +101,9 @@
     (uvia_drill 0.1)
   )
 
+  (gr_circle (center 224.575 146.825) (end 248.95 132.45) (layer Dwgs.User) (width 0.15))
+  (gr_circle (center 75.125 150.025) (end 101.1 138.025) (layer Dwgs.User) (width 0.15))
+  (gr_circle (center 79.125 52.925) (end 103.5 38.525) (layer Dwgs.User) (width 0.15))
   (gr_circle (center 225.25 52.2) (end 251.775 40.6) (layer Dwgs.User) (width 0.15))
   (gr_line (start 9.07034 106.33456) (end 288.63036 106.33456) (layer F.SilkS) (width 0.12))
   (gr_line (start 151.39162 8.48868) (end 151.39162 201.64044) (layer F.SilkS) (width 0.12))
