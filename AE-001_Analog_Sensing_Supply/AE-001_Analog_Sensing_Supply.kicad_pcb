@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.5-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.6-c6e7f7d~87~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
-    (drawings 3)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 0)
@@ -101,6 +101,7 @@
     (uvia_drill 0.1)
   )
 
+  (gr_circle (center 225.25 52.2) (end 251.775 40.6) (layer Dwgs.User) (width 0.15))
   (gr_line (start 9.07034 106.33456) (end 288.63036 106.33456) (layer F.SilkS) (width 0.12))
   (gr_line (start 151.39162 8.48868) (end 151.39162 201.64044) (layer F.SilkS) (width 0.12))
   (gr_circle (center 49.9491 52.3494) (end 73.77176 68.04406) (layer F.SilkS) (width 0.12))
